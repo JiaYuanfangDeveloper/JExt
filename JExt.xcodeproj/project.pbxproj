@@ -15,6 +15,9 @@
 		563896F81F21EF1300579AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563896F61F21EF1300579AF3 /* LaunchScreen.storyboard */; };
 		563897031F21EF1300579AF3 /* JExtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 563897021F21EF1300579AF3 /* JExtTests.m */; };
 		5638970E1F21EF1300579AF3 /* JExtUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5638970D1F21EF1300579AF3 /* JExtUITests.m */; };
+		5638971D1F21EF8000579AF3 /* UIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5638971C1F21EF8000579AF3 /* UIColorExt.m */; };
+		56B890881F25916200CD9A79 /* UIDeviceExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B890871F25916200CD9A79 /* UIDeviceExt.m */; };
+		56B8908C1F26127D00CD9A79 /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B8908B1F26127D00CD9A79 /* UICopyLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		563897091F21EF1300579AF3 /* JExtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JExtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5638970D1F21EF1300579AF3 /* JExtUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JExtUITests.m; sourceTree = "<group>"; };
 		5638970F1F21EF1300579AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5638971B1F21EF8000579AF3 /* UIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorExt.h; sourceTree = "<group>"; };
+		5638971C1F21EF8000579AF3 /* UIColorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorExt.m; sourceTree = "<group>"; };
+		56B890861F25916200CD9A79 /* UIDeviceExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceExt.h; sourceTree = "<group>"; };
+		56B890871F25916200CD9A79 /* UIDeviceExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceExt.m; sourceTree = "<group>"; };
+		56B8908A1F26127D00CD9A79 /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
+		56B8908B1F26127D00CD9A79 /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				563896EC1F21EF1200579AF3 /* AppDelegate.m */,
 				563896EE1F21EF1200579AF3 /* ViewController.h */,
 				563896EF1F21EF1200579AF3 /* ViewController.m */,
+				56B8908A1F26127D00CD9A79 /* UICopyLabel.h */,
+				56B8908B1F26127D00CD9A79 /* UICopyLabel.m */,
+				56B890891F25B6A400CD9A79 /* UIKit */,
 				563896F11F21EF1200579AF3 /* Main.storyboard */,
 				563896F41F21EF1200579AF3 /* Assets.xcassets */,
 				563896F61F21EF1300579AF3 /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				5638970F1F21EF1300579AF3 /* Info.plist */,
 			);
 			path = JExtUITests;
+			sourceTree = "<group>";
+		};
+		56B890891F25B6A400CD9A79 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5638971B1F21EF8000579AF3 /* UIColorExt.h */,
+				5638971C1F21EF8000579AF3 /* UIColorExt.m */,
+				56B890861F25916200CD9A79 /* UIDeviceExt.h */,
+				56B890871F25916200CD9A79 /* UIDeviceExt.m */,
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B890881F25916200CD9A79 /* UIDeviceExt.m in Sources */,
+				56B8908C1F26127D00CD9A79 /* UICopyLabel.m in Sources */,
 				563896F01F21EF1200579AF3 /* ViewController.m in Sources */,
+				5638971D1F21EF8000579AF3 /* UIColorExt.m in Sources */,
 				563896ED1F21EF1200579AF3 /* AppDelegate.m in Sources */,
 				563896EA1F21EF1200579AF3 /* main.m in Sources */,
 			);
@@ -518,6 +544,7 @@
 				563897141F21EF1300579AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		563897151F21EF1300579AF3 /* Build configuration list for PBXNativeTarget "JExtTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +553,7 @@
 				563897171F21EF1300579AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		563897181F21EF1300579AF3 /* Build configuration list for PBXNativeTarget "JExtUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +562,7 @@
 				5638971A1F21EF1300579AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
